@@ -1,0 +1,130 @@
+﻿*{
+	padding:0;
+	margin:0;
+	box-sizing:border-box;
+}
+body{
+	background-image:url('1.jpg');
+	background-size:cover;
+	background-position:center;
+	font-family:SansSerif;
+}
+.menu-bar{
+	background:rgb(0,100,0);
+	text-align:center;
+}
+.menu-bar ul{
+	display:inline-flex;
+	list-style:none;
+	color:#fff;
+}
+.menu-bar ul li{
+	width:170px;
+	margin:15px;
+	padding:15px;
+}
+a{
+	text-decoration:none;
+	color:white;
+}
+.active,.menu-bar ul li:hover{
+	background:#2bab0d;
+	border-radius:3px;
+}
+.submenu-1{
+	display:none;
+}
+.menu-bar ul li:hover .submenu-1{
+	display:block;
+	position:absolute;
+	background:rgba(0,100,0);
+	margin-top:15px;
+	margin-left:-15px;
+}
+.menu-bar ul li:hover .submenu-1 ul{
+	display:block;
+	margin:10px;
+}
+.menu-bar ul li:hover .submenu-1 ul li{
+	width:150px;
+	padding:10px;
+	border-bottom:1px dotted #fff;
+	background:transparent;
+	border-radius:0;
+	text-alignmnet:left;
+}
+.menu-bar ul li:hover .submenu-1 ul li:last-child{
+	border-bottom:none;
+}
+.menu-bar ul li:hover .submenu-1 ul li a:hover{
+	color:#b2ff00;
+}
+.submenu-2{
+    display: none;
+}
+.hover-me:hover .submenu-2{
+    position: absolute;
+    display: block;
+    margin-top: -40px;
+    margin-left: 140px;
+    background: rgb(0,100,0);
+}
+.payment-button a
+{
+  margin-left:460px;
+  
+  border-radius:4px;
+  outline:none;
+  text-transform:uppercase;
+  font-size:35px;
+  text-align:center;
+  font-weight:500;
+  text-decoration:none;
+  letter-spacing: 1px;
+}
+.payment-button .btntwo
+{
+  background:#00b894;
+  color: white  ;
+}
+.payment-button .btntwo:hover{
+	background-color:#006774;
+}
+
+img{
+	height:40px;
+	width:50px;
+	padding-top:20px;
+}
+img:hover{
+	background:#2bab0d;
+	border-radius:3px;
+
+}
+h1{
+	text-align:center;
+	margin:15px 0 0 0;
+	color:#fff;
+}
+h1:hover{
+	font-weight:bold;
+	color:#ff2;
+}
+p{
+	text-align:center;
+	margin:20px 0 0 0;
+	color:black;
+	font-weight:bold;
+	font-size:20px;
+}
+.footer{
+    background: lightgray;
+    margin-bottom: 0;
+    bottom: 0;
+    padding: 10px;
+    text-align:center;
+    margin-top:100px;
+}
+.info{
+    font-weight: 500;
+}
